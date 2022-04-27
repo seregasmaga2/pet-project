@@ -1,0 +1,34 @@
+.splash {
+    &__symbol {
+        height: 1000px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__img {
+        height: 100%;
+    }
+    &__heading {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 405px;
+        margin-top: 367px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: $text-color;
+    }
+    &__scroll {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        margin-bottom: 60px;
+        &__button:hover circle,
+        &__button:hover path {
+            stroke: $accent;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.experience {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    display: flex;
+    justify-content: center;
+    &__link-block {
+        min-width: 375px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__rectangle {
+        min-width: 4px;
+        margin: 0 60px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
