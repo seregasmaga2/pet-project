@@ -1,0 +1,68 @@
+.footer {
+    background: $bg;
+    padding-bottom: 30px;
+    &__separator {
+        height: 2px;
+        background: $separator;
+        margin-bottom: 30px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__geo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 21px;
+    }
+    &__call {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__address {
+        font-size: 16px;
+        line-height: 20px;
+        color: $main;
+    }
+    &__circle {
+        background-color: $text-grey;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+    }
+    &__onmap {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blu-reg;
+    }
+    &__fb:hover {
+        path {
+            fill: $accent;
+        }        
+    }
+    &__phone {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main-alt;
+    }
+    &__email {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $blu-reg;
+        &:hover {
+            color: $accent;
+        }
+    }
+    &__right {
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-grey;
+    }
+}

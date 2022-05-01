@@ -14,4 +14,38 @@
         margin: 0 60px;
         background: rgba(255, 255, 255, 0.3);
     }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__link {
+        margin: 15px 0 15px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: right;
+        color: $text-grey;
+        &:hover {
+            color: $accent;
+        }
+        &.active {
+            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+    &__heading {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: $text-color;
+    }
+    &__text {
+        font-size: 19px;
+        line-height: 30px;
+        color: $text-color;
+    }
 }

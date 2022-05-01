@@ -3,3 +3,48 @@ $accent: #F0145A;
 $grey-bgalt: #EDEDF7;
 $blu-reg: #24A3FF;
 $blu-hover: #0085FF;
+$text-grey: #B3B3BA;
+$bg: #F5F5FA;
+$main: #323264;
+$separator: #E6E6F0;
+$main-alt: #46466E;
+
+%anker-link {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blu-reg;
+    &::after {
+        content: '';
+        position: absolute;
+        border-top: 2px solid $blu-reg;
+        border-right: 2px solid $blu-reg;
+        transform: rotate(45deg);
+        top: 5px;
+        right: -10px;
+        width: 5px;
+        height: 5px;
+    }
+    &:hover {
+        color: $accent;
+        &::after {
+            border-top: 2px solid $accent;
+            border-right: 2px solid $accent;
+        }
+    }
+}
+
+%section-heading {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

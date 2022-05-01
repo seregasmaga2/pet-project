@@ -1,0 +1,54 @@
+.services {
+    margin-bottom: 20px;
+    &__anker-link {
+        @extend %anker-link;
+    }
+    &__heading {
+        margin-bottom: 60px;
+        @extend %section-heading;
+    }
+    &__grid {
+        margin-bottom: 60px;
+        display: grid;
+        gap: 60px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    &__icon {
+        background: $text-color;
+        border-radius: 24px;
+        padding: 14px;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    &__item-heading {
+        margin-bottom: 15px;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: $blu-reg;
+        &:hover {
+            color: $accent;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        color: $text-color;
+    }
+}
+.shadow-prime {
+    transform: translateY(20px);
+    height: 10px;
+    margin: 0 20px;
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+}
+.shadow-sec {
+    transform: translateY(20px);
+    height: 10px;
+    margin: 0 40px;
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+}
