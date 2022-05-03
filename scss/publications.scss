@@ -1,0 +1,63 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/utils';
+@import './components/header-light';
+@import './components/publications';
+@import './components/footer';
+
+
+.publications{
+    &__heading {
+        margin: 0 auto 30px;
+        display: flex;
+        justify-content: center;
+        max-width: 233px;
+        background: $separator;
+        border-radius: 12px;
+        padding: 1px;
+        gap: 2px;
+    }
+    &__switcher {
+        padding: 8px 30px 10px;
+        &.active {
+            background: $text-color;
+            border-radius: 10px;
+        }
+        &:hover {
+            background: $bg;
+            border-radius: 10px;
+        }
+    }
+    &__news, &__articles {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main;
+    }
+    &__grid__item {
+        &:last-child {
+            padding-top: 30px;
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__link {
+        background: $blu-reg;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        padding: 18px 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-color;
+        &:hover {
+            background: $blu-hover;
+        }
+        &:active {
+            background: $blue-active;
+        }
+    }
+}
