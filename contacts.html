@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="container header">
+        <div class="container header mobile">
             <div class="header__logo">
                 <a href="./index.html" class="logo-link">
                     <img src="./img/Logo-dark.png" alt="logo-dark" class="header__img">
@@ -42,6 +42,20 @@
                         </a>
                     </div>
                 </div>
+                <div class="header__mob">
+                    <div class="header__logo-tab">
+                        <a href="./index.html" class="header__logo-link">
+                            <img src="./img/Logo-dark.png" alt="logo-light" class="header__img">
+                        </a>
+                        <img src="./img/Slash.png" alt="slash" class="header__slash">
+                        <p class="header__page">contact</p>
+                    </div>
+                    <div class="header__burger">
+                        <div class="header__bar"></div>
+                        <div class="header__bar"></div>
+                        <div class="header__bar"></div>
+                    </div>
+                </div>
                 <nav class="header__nav">
                     <a href="#">about us</a>
                     <a href="./services.html">services</a>
@@ -71,12 +85,22 @@
         <div class="contacts__form">
             <form class="form" action="/">
                 <h2 class="form__heading">We would like to help you</h2>
-                <input class="form__name" type="text" name="name" placeholder="Name" autofocus>
-                <textarea class="form__message" type="text" name="message" placeholder="Message"></textarea>
+                <label>
+                    <input class="form__name" type="text" name="name" placeholder="Name" autofocus>
+                </label>
+                <label>
+                    <textarea class="form__message" type="text" name="message" placeholder="Message"></textarea>
+                </label>
                 <p class="form__text">How to answer you?</p>
-                <input type="tel" name="phone" class="form__phone" placeholder="Phone number">
-                <input type="email" name="email" class="form__email" placeholder="Email">
-                <button class="form__button" type="submit">Send message</button>
+                <label>
+                    <input type="tel" name="phone" class="form__phone" placeholder="Phone number">
+                </label>
+                <label>
+                    <input type="email" name="email" class="form__email" placeholder="Email">
+                </label>
+                <label>
+                    <button class="form__button" type="submit">Send message</button>
+                </label>
             </form>
         </div>
     </section>

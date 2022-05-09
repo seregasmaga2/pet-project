@@ -18,3 +18,11 @@ main {
 .clients {
     margin-top: 60px;
 }
+@media screen and  (max-width: 376px) {
+    main {
+        padding-top: 0;
+    }
+    .services {
+        margin-top: 40px;
+    }
+}

@@ -64,5 +64,48 @@
         font-size: 16px;
         line-height: 20px;
         color: $text-grey;
+        text-align: right;
+        &--tab {
+            display: none;
+        }
+    }
+}
+@media screen and  (max-width: 768px) {
+    .footer {
+        &__content {
+            flex-direction: column;
+        }
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto 30px;
+        }
+        &__right {
+            text-align: center;
+        }
+    }
+}
+@media screen and  (max-width: 376px) {
+    .footer {
+        &__right {
+            display: block;
+            text-align: center;
+            &--tab {
+                display: none;
+            }
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__geo {
+            flex-direction: column;
+        }
+        &__call {
+            flex-direction: column;
+        }
+        &__circle {
+            display: none;
+        }
     }
 }

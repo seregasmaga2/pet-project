@@ -52,3 +52,30 @@
     background: #E7E7F2;
     border-radius: 0px 0px 12px 12px;
 }
+@media screen and  (max-width: 1440px) {
+
+}
+@media screen and  (max-width: 1024px) {
+    .services {
+        &__grid {
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        }
+    }
+}
+@media screen and  (max-width: 376px) {
+    .container {
+        padding: 0 30px;
+    }
+    .services {
+        &__grid {
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        }
+        &__heading {
+            font-size: 30px;
+            line-height: 37px;
+            margin-bottom: 30px;
+            gap: 30px;
+        }
+    }
+}
