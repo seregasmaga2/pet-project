@@ -18,7 +18,9 @@
         gap: 2px;
     }
     &__switcher {
+        cursor: pointer;
         padding: 8px 30px 10px;
+        transition: 0.6s ease;
         &.active {
             background: $text-color;
             border-radius: 10px;
@@ -53,6 +55,7 @@
         font-size: 16px;
         line-height: 20px;
         color: $text-color;
+        transition: 0.6s ease;
         &:hover {
             background: $blu-hover;
         }
@@ -61,10 +64,5 @@
         }
     }
 }
-@media screen and  (max-width: 768px) {
-    .publications {
-        &__grid__item:last-child {
-            grid-column: 2/3;
-        }
-    }
-}
+
+

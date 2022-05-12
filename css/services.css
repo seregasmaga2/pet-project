@@ -15,6 +15,8 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24A3FF;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .services__anker-link::after {
@@ -28,6 +30,8 @@ body {
   right: -10px;
   width: 5px;
   height: 5px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .services__anker-link:hover {
@@ -62,13 +66,14 @@ a {
 
 .container {
   max-width: 1640px;
-  padding: 0 20px;
+  padding: 0 60px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1440px) {
   .container {
     max-width: 1360px;
+    padding: 0 60px;
   }
 }
 
@@ -86,9 +91,9 @@ a {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 575px) {
   .container {
-    max-width: 375px;
+    max-width: 575px;
     padding: 0 30px;
   }
 }
@@ -157,6 +162,8 @@ a {
   line-height: 15px;
   letter-spacing: 1px;
   color: #fff;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .header__languages .language.current {
@@ -190,6 +197,11 @@ a {
   color: #fff;
 }
 
+.header__fb-link path {
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
 .header__fb-link:hover path {
   fill: #F0145A;
 }
@@ -205,6 +217,9 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.6s ease;
+  transition: border-bottom 0.6s ease;
 }
 
 .header__nav a:hover {
@@ -250,7 +265,7 @@ a {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 575px) {
   .container.mobile {
     padding: 0;
   }
@@ -303,11 +318,14 @@ a {
   .header__fb-link {
     display: none;
   }
+  .header__content {
+    width: 575px;
+  }
   .header__contacts {
     background: rgba(245, 245, 250, 0.2);
     margin: 0;
     padding: 10px 15px;
-    width: 375px;
+    width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -361,6 +379,8 @@ a {
   font-size: 22px;
   line-height: 27px;
   color: #24A3FF;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .services__link:hover {
@@ -393,12 +413,12 @@ a {
 
 @media screen and (max-width: 1024px) {
   .services__grid {
-    -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    -ms-grid-columns: (minmax(242px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 575px) {
   .container {
     padding: 0 30px;
   }
@@ -549,11 +569,11 @@ a {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 575px) {
   .clients__grid {
-    max-width: 375px;
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 575px;
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 }
 
@@ -620,6 +640,11 @@ a {
   color: #24A3FF;
 }
 
+.footer__fb path {
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
 .footer__fb:hover path {
   fill: #F0145A;
 }
@@ -636,6 +661,8 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #24A3FF;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .footer__email:hover {
@@ -676,7 +703,7 @@ a {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 575px) {
   .footer__right {
     display: block;
     text-align: center;
@@ -721,7 +748,7 @@ main {
   margin-top: 60px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 575px) {
   main {
     padding-top: 0;
   }

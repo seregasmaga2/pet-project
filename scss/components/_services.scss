@@ -28,6 +28,7 @@
         font-size: 22px;
         line-height: 27px;
         color: $blu-reg;
+        transition: 0.6s ease;
         &:hover {
             color: $accent;
         }
@@ -58,11 +59,11 @@
 @media screen and  (max-width: 1024px) {
     .services {
         &__grid {
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
         }
     }
 }
-@media screen and  (max-width: 376px) {
+@media screen and  (max-width: 575px) {
     .container {
         padding: 0 30px;
     }

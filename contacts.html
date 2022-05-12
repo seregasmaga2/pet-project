@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/contacts.min.css">
     <title>Contacts</title>
 </head>
@@ -86,17 +86,17 @@
             <form class="form" action="/">
                 <h2 class="form__heading">We would like to help you</h2>
                 <label>
-                    <input class="form__name" type="text" name="name" placeholder="Name" autofocus>
+                    <input required minlength="3" class="form__name" type="text" name="name" placeholder="Name" autofocus>
                 </label>
                 <label>
-                    <textarea class="form__message" type="text" name="message" placeholder="Message"></textarea>
+                    <textarea maxlength="250" class="form__message" type="text" name="message" placeholder="Message"></textarea>
                 </label>
                 <p class="form__text">How to answer you?</p>
                 <label>
-                    <input type="tel" name="phone" class="form__phone" placeholder="Phone number">
+                    <input required minlength="9" maxlength="14" type="tel" name="phone" class="form__phone" placeholder="Phone number">
                 </label>
                 <label>
-                    <input type="email" name="email" class="form__email" placeholder="Email">
+                    <input required type="email" name="email" class="form__email" placeholder="Email">
                 </label>
                 <label>
                     <button class="form__button" type="submit">Send message</button>

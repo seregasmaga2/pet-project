@@ -36,6 +36,7 @@ header {
             line-height: 15px;
             letter-spacing: 1px;
             color: $text-grey;
+            transition: 0.6s ease;
             &.current {
                 background: $accent;
                 border-radius: 8px;
@@ -65,10 +66,15 @@ header {
         line-height: 19px;
         color: $text-grey;
     }
-    &__fb-link:hover {
+    &__fb-link {
         path {
-            fill: $accent;
-        }        
+            transition: 0.6s ease;
+        }
+        &:hover {
+            path {
+                fill: $accent;
+            }        
+        }
     }
     &__burger {
         display: none;
@@ -80,6 +86,8 @@ header {
         font-size: 16px;
         line-height: 20px;
         color: $blu-reg;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.6s ease;
         &:hover {
             border-bottom: 2px solid $blu-reg;
         }
@@ -111,7 +119,7 @@ header {
         }
     }
 }
-@media screen and  (max-width: 376px) {
+@media screen and  (max-width: 575px) {
     header {
         margin: 0;
     }
@@ -157,11 +165,14 @@ header {
         &__fb-link {
             display: none;
         }
+        &__content {
+            width: 575px;
+        }
         &__contacts {
             background: $bg;
             margin: 0;
             padding: 10px 15px;         
-            width: 375px;
+            width: 100%;
             justify-content: space-between;
         }
         &__logo-tab {

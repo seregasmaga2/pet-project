@@ -26,6 +26,9 @@
         justify-content: center;
         padding-bottom: 30px;
         margin-bottom: 60px;
+        path, circle {
+            transition: 0.6s ease;
+        }
         &__button:hover circle,
         &__button:hover path {
             stroke: $accent;
@@ -58,6 +61,7 @@
     .splash {
         &__symbol {
             height: 1024px;
+            width: 100%;
         }
         &__heading {
             margin-bottom: 417px;
@@ -65,11 +69,11 @@
         }
         &__img {
             object-fit: cover;
-            width: 768px;
+            width: 100%;
         }
     }
 }
-@media screen and  (max-width: 376px) {
+@media screen and  (max-width: 575px) {
     .splash {
         &__symbol {
             height: 600px;
@@ -78,10 +82,7 @@
             margin-bottom: 159px;
             margin-top: 139px;
             padding: 0 30px;
-        }
-        &__img {
-            object-fit: cover;
-            width: 375px;
+            height: 138px;
         }
         &__scroll {
             margin-bottom: 30px;

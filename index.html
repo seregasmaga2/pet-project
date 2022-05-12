@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css"  href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./animate.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Pet-project_Smaga_Sergiy</title>
 </head>
@@ -64,7 +67,7 @@
                     </div>
                 </header>
                 <h1 class="splash__heading">you legal solutions provider</h1>
-                <div class="splash__symbol">
+                <div class="splash__symbol wow zoomIn">
                     <img class="splash__img" src="./img/Symbol-big.png" alt="big-symbol">
                 </div>
                 <div class="splash__scroll">
@@ -77,7 +80,7 @@
                 </div>
             </div>
         </section>
-        <section class="experience">
+        <section class="experience wow bounceInDown">
             <div class="experience__link-block">
                 <a class="experience__link active" href="">Consistent</a>
                 <a class="experience__link" href="">Customer oriented</a>
@@ -95,7 +98,7 @@
                 </p>
             </div>
         </section>
-        <section class="services">
+        <section class="services wow zoomInUp">
             <div class="container">
                 <div class="services__frame">
                     <a href="./services.html" class="services__anker-link">Services</a>
@@ -188,26 +191,75 @@
         </section>
     </main>
     <section class="team">
-        <div class="team__wrapper">
-            <div class="team__picture">
-                <img src="./img/muzhyk.png" alt="some-muzhik">
+        <div class="slider">
+            <div>
+                <div class="team__wrapper">
+                    <div class="team__picture">
+                        <img src="./img/muzhyk.png" alt="some-muzhik">
+                    </div>
+                    <div class="team__content">
+                        <a href="#" class="team__anker-link">команда</a>
+                        <h2 class="team__heading">Ми звикли брати на себе відповідальність та завжди гарантуємо 
+                            чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                        </h2>
+                        <h6 class="team__member">Олександр Олександровський</h6>
+                        <p class="team__text">Керуючий партнер</p>
+                    </div>
+                </div>
             </div>
-            <div class="team__content">
-                <a href="#" class="team__anker-link">команда</a>
-                <h2 class="team__heading">Ми звикли брати на себе відповідальність та завжди гарантуємо 
-                    чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-                </h2>
-                <h6 class="team__member">Олександр Олександровський</h6>
-                <p class="team__text">Керуючий партнер</p>
+            <div>
+                <div class="team__wrapper">
+                <div class="team__picture">
+                    <img src="./img/nemuzhik.png" alt="some-nemuzhik">
+                </div>
+                <div class="team__content">
+                    <a href="#" class="team__anker-link">команда</a>
+                    <h2 class="team__heading">Her professional experience includes resolving disputes under 
+                        English law and representing interests in foreign commercial arbitrations such as GAFTA. 
+                    </h2>
+                    <h6 class="team__member">Oksana Kobzar</h6>
+                    <p class="team__text">Equity partner, Attorney-at-law</p>
+                </div>
+                </div>
+            </div>
+            <div>
+                <div class="team__wrapper">
+                    <div class="team__picture">
+                        <img src="./img/muzhyk.png" alt="some-muzhik">
+                    </div>
+                    <div class="team__content">
+                        <a href="#" class="team__anker-link">команда</a>
+                        <h2 class="team__heading">Ми звикли брати на себе відповідальність та завжди гарантуємо 
+                            чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                        </h2>
+                        <h6 class="team__member">Олександр Олександровський</h6>
+                        <p class="team__text">Керуючий партнер</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="team__wrapper">
+                <div class="team__picture">
+                    <img src="./img/nemuzhik.png" alt="some-nemuzhik">
+                </div>
+                <div class="team__content">
+                    <a href="#" class="team__anker-link">команда</a>
+                    <h2 class="team__heading">Her professional experience includes resolving disputes under 
+                        English law and representing interests in foreign commercial arbitrations such as GAFTA. 
+                    </h2>
+                    <h6 class="team__member">Oksana Kobzar</h6>
+                    <p class="team__text">Equity partner, Attorney-at-law</p>
+                </div>
+                </div>
             </div>
         </div>
-        <div class="team__switch">
+        <!-- <div class="team__switch">
             <a href="#" class="team__switcher"></a>
             <a href="#" class="team__switcher"></a>
             <a href="#" class="team__switcher"></a>
-        </div>
+        </div> -->
     </section>
-    <section class="clients">
+    <section class="clients wow flipInY" data-wow-duration="2s">
         <h3 class="clients__heading">They already trust us</h3>
         <div class="clients__grid">
             <div class="clients__grid-item">
@@ -325,5 +377,23 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            dots: true,
+            speed: 600,
+            autoplay: true,
+            infinite: true,
+            dotsClass: 'team__switch',
+        });
+    </script>
+    <script src="./wow.min.js"></script>
+    <script>
+        new WOW(
+            { offset: 200, }
+        )
+        .init();
+    </script>
 </body>
 </html>

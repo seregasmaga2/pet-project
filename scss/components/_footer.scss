@@ -40,10 +40,15 @@
         text-transform: uppercase;
         color: $blu-reg;
     }
-    &__fb:hover {
+    &__fb {
         path {
-            fill: $accent;
-        }        
+            transition: 0.6s ease;
+        }
+        &:hover {
+            path {
+                fill: $accent;
+            }        
+        }    
     }
     &__phone {
         font-weight: 700;
@@ -56,6 +61,7 @@
         font-size: 16px;
         line-height: 20px;
         color: $blu-reg;
+        transition: 0.6s ease;
         &:hover {
             color: $accent;
         }
@@ -86,7 +92,7 @@
         }
     }
 }
-@media screen and  (max-width: 376px) {
+@media screen and  (max-width: 575px) {
     .footer {
         &__right {
             display: block;
